@@ -28,7 +28,7 @@ def mean3(num_list):
 
 def mean4(num_list):
     try:
-      mean = sum (num_list)/len(num_list)
+      mean = sum (num_list)/float(len(num_list))
       #check if 'mean' is of a certain type
       if isinstance(mean, complex):
           return NotImplemented
