@@ -28,7 +28,11 @@ def mean3(num_list):
 
 def mean4(num_list):
     try:
-      return sum (num_list)/len(num_list)
+      mean = sum (num_list)/len(num_list)
+      #check if 'mean' is of a certain type
+      if isinstance(mean, complex):
+          return NotImplemented
+      return mean
     except ZeroDivisionError as detail:
       msg ="\nCannot compute the mean value of an empy list"
       raise ZeroDivisionError(detail.__str__() + msg)
