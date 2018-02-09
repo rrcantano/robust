@@ -13,7 +13,7 @@ def test_ints():
 
 def test_double():
     #test if takes double values, not just integer
-    num_list = [1.,2.,3.,4.]
+    num_list = [1 ,2 ,3 ,4]
     obs = mean4(num_list)
     exp = 2.5
     assert obs == exp
