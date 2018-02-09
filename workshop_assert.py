@@ -28,7 +28,6 @@ def mean3(num_list):
 
 def mean4(num_list):
     try:
-      print sum(num_list)/len(num_list)
       return sum (num_list)/len(num_list)
     except ZeroDivisionError as detail:
       msg ="\nCannot compute the mean value of an empy list"
